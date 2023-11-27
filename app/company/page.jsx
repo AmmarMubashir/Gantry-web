@@ -19,8 +19,8 @@ const Company = () => {
   const menuRef = useRef(null);
   const toggleMenu = () => menuRef.current.classList.toggle("show__menu");
   return (
-    <>
-      <CompanyTransition />
+    <div className="max-w-screen overflow-x-hidden">
+      {/* <CompanyTransition /> */}
       <div className="w-full flex items-center justify-between px-[10px] md:px-[2rem] py-[1.5rem] h-[80px] bg-[#3c0001]">
         <div className="text-[22px] font-[600] text-white uppercase tracking-wider">
           <Link href="/">gantry</Link>
@@ -59,7 +59,7 @@ const Company = () => {
           </span>
         </div>
       </div>
-      <div className="bg-[#3c0001] min-h-[200px]">
+      <div className="bg-[#3c0001] min-h-[200px] w-screen overflow-x-hidden">
         <div className="pt-[10rem] mx-auto flex items-start flex-wrap">
           <div className="w-full md:w-1/2 lg:w-1/3 xl:w-2/4 flex justify-start">
             <h1 className="text-[#fa4c27] text-[3rem] font-bold p-6">
@@ -446,7 +446,7 @@ const Company = () => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
